@@ -1934,7 +1934,7 @@ Wombat.prototype.rewriteUrl_ = function(originalURL, useRel, mod, doc) {
  * @return {?string}
  */
 Wombat.prototype.rewriteUrl = function(url, useRel, mod, doc) {
-  var rewritten = this.rewriteUrl_(url, useRel, mod, doc);
+  var rewritten = this.rewriteUrl_(url, useRel, "", doc);
   if (this.debug_rw) {
     if (url !== rewritten) {
       console.log('REWRITE: ' + url + ' -> ' + rewritten);
